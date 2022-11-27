@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 //Home
 Route::get('/', [HomeController::class, "index"])->name('home');
 
+Route::get('/relationship', [HomeController::class, "relationship"])->name('relationship');
+
 //Todo
 Route::prefix('/todo')->group(function (){
     Route::get('/', [TodoController::class, "index"])->name('todo');

@@ -12,6 +12,9 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href={{ route('banner') }}>Banner List</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href={{ route('relationship') }}>Relationship</a>
+          </li>
         </ul>
         @if (Auth::user())
         <form method="POST" action="{{ route('logout') }}">
